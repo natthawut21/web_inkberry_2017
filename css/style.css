@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+html body .carousel {
+  height: 95%;
+}
+html body .carousel .carousel-indicators {
+  bottom: 0;
+}
+html body .carousel .carousel-inner {
+  height: 100%;
+}
+html body .carousel .carousel-inner .item {
+  height: 100%;
+}
+html body .carousel .carousel-inner .item .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+html body .carousel .carousel-inner .item .carousel-caption {
+  top: 65%;
+  bottom: initial;
+}
+/* DEMO STYLES NOT NEEDED */
+section {
+  padding: 600px 0;
+}
