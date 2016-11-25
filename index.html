@@ -414,37 +414,86 @@
         </div>-->
         <!-- /.row -->
     </section>
+     <section id="team">
+         
+         
+          <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">ทีมงาน</h2>
+            </div>
+            </div>
+         <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center" >
+                
+                <img class="img-circle img-center"  src="images/staffs/peark.JPG" alt="">
+                <h3>เปี๊ยก
+                    <!-- <small>Job Title</small>-->
+                </h3>
+                <!--<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>-->
+            </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                <img class="img-circle img-center" src="images/staffs/bam.jpg" alt="">
+                <h3>แบม
+                    <!--<small>Job Title</small>-->
+                </h3>
+                <!--<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>-->
+            </div> 
+            </div> 
+              
+              
+        </section>
         
-         <section id="portfolio">
+    <section id="contact">
          <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">ติดต่ออิงค์เบอรรี่</h1>
-                 <p>   
-				  <h3>6/4-5 ถนน รังษีเกษม ตำบล ในเวียง<BR>
-						อำเภอ เมือง  จังหวัด น่าน <BR> 55000<BR>
-					
-						<!--<i class="fa fa-3x fa-gift wow bounceIn text-primary" data-wow-delay=".3s"></i>-->
-						<i class="glyphicon  glyphicon-phone-alt" data-wow-delay=".3s"></i> 054-774-877
-					</h3>
-					</p>
-					
-					   <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-					<p>087-512-3087</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:info@inkberry.co.th">info@inkberry.co.thm</a></p>
-                </div>
-				<p align="center">   
-					
-					<img src="images/map_1.png" alt="map" class="img-rounded">
-                      </p>   
+            <div class="col-lg-10 col-lg-offset-1">
                 
+                 
+                
+                
+                
+                
+                <h1 class="page-header">ติดต่ออิงค์เบอรรี่</h1>
+                 <p> 
+                     
+                      <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i>
+                            </h4>
+                    </div>
+                    <div class="panel-body">
+                        <h3>6/4-5 ถนน รังษีเกษม ตำบล ในเวียง<BR>
+						อำเภอ เมือง  จังหวัด น่าน <BR> 55000<BR></p>
+                       <!-- <a href="#" class="btn btn-default">Learn More</a>-->
+                            <HR>
+                            <i class="glyphicon  glyphicon-phone-alt" data-wow-delay=".3s"></i> 054-774-877
+                           <!--  <i class="fa fa-phone fa-3x wow bounceIn"></i>087-512-3087                            -->
+                                <BR>
+                             <BR><i class="fa fa-phone wow bounceIn"></i> 087-512-3087  
+                                 <BR>
+                              <BR><i class="fa fa-envelope-o wow bounceIn" data-wow-delay=".1s"></i> info@inkberry.co.thm
+                                  
+                           <!-- <HR>
+                                <div align="center"> <img src="images/map_1.png" alt="map" class="img-rounded"></div>-->
+                                  
+                        </h3>
+                    </div>
+                </div>
             </div>
              </div>
+          <div class="row">                      
+              
+              
+               <div class="col-lg-5 col-lg-offset-1">
+                   <div id="map" style="width:400px;height:400px;background:white"></div>
+                   
+                   </div>
+          
+                <div class="col-lg-5 "> <img src="images/map_1.png" alt="map" class="img-rounded">
+                                    
+                 </div>                
              </div>
+          </div>
         </section>
  </div>
   
@@ -459,8 +508,31 @@
  <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 4000 //changes the speed
+        interval: 5000 //changes the speed
     })
+    
+    $(function () {
+
+    function initMap() {
+
+        var location = new google.maps.LatLng(18.784742, 100.786083);
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            center: location,
+            zoom: 18,
+            panControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+});
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOokQnmiOukPofRvdWQAlw1GESLveVVbI"></script>
+                            
+                          
 </body>
 </html>
